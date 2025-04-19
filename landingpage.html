@@ -387,8 +387,7 @@
   <section id="premium">
     <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Choose Your Best Plan</h2>
     <div class="pricing-container">
-      <!-- Pricing cards here -->
-      <!-- Same as original -->
+      
       <div class="pricing-card free">
         <h3>Free</h3>
         <p class="price">$0</p>
@@ -401,7 +400,7 @@
         <button class="cta-button">Get Started</button>
       </div>
   
-      <!-- Pro Plan -->
+   
       <div class="pricing-card pro">
         <h3>Pro</h3>
         <p class="price">$10<span>/mo</span></p>
@@ -411,11 +410,11 @@
           <li>✓ Priority speed</li>
           <li>✓ Ad-free experience</li>
         </ul>
-        <!-- <button class="cta-button purple">Upgrade</button> -->
+        
         <button class="cta-button purple" onclick="window.location.href='upgrade.html'">Upgrade</button>
       </div>
   
-      <!-- Enterprise Plan -->
+      
       <div class="pricing-card enterprise">
         <h3>Enterprise</h3>
         <p class="price">$25<span>/mo</span></p>
@@ -425,7 +424,7 @@
           <li>✓ API usage limits raised</li>
           <li>✓ Dedicated support</li>
         </ul>
-        <!-- <button class="cta-button red">Upgrade</button> -->
+        
         <button class="cta-button red" onclick="window.location.href='upgrade.html'">Upgrade</button>
       </div>
     </div>
@@ -466,6 +465,17 @@
     <hr style="margin: 2rem 0; border-color: #444;" />
     <p>© 2025 My Ai. All rights reserved. • <a href="#about">Privacy Policy</a> • <a href="#about">Terms of Use</a></p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuIcon = document.getElementById('menuIcon');
+      const navLinks = document.getElementById('navLinks');
+  
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+  
 
         <script type="module">
     import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
